@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Kingtex Christmas Invitation</title>
-  <style>
+<meta charset="UTF-8">
+<title>Kingtex Christmas Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background: #021319;
-      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background: radial-gradient(circle at 40% 20%, #14323f 0%, #021319 50%, #000a0f 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     }
-    .wrapper {
-      width: 100%;
-      max-width: 430px;
-      padding: 12px;
+
+    .container {
+        width: 100%;
+        max-width: 550px;
+        height: 100%;
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .card {
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      background: #021319;
+        width: 100%;
+        height: auto;
+        border-radius: 22px;
+        background: #021319;
+        box-shadow: 0 20px 45px rgba(0,0,0,0.65);
+        overflow: hidden;
+        backdrop-filter: blur(6px);
+        display: flex;
+        flex-direction: column;
     }
-    .card img {
-      display: block;
-      width: 100%;
-      height: auto;
+
+    .image-box {
+        width: 100%;
+        position: relative;
     }
-    .footer-text {
-      text-align: center;
-      color: #f7f7f7;
-      font-size: 14px;
-      padding: 10px 6px 14px;
-      line-height: 1.4;
-      opacity: 0.9;
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
-  </style>
+
+    .footer {
+        padding: 16px 20px 18px;
+        color: #e8edf1;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.45;
+        background: linear-gradient(to bottom, #021319cc, #00090fcc);
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer strong {
+        font-weight: 600;
+        font-size: 15px;
+    }
+</style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="card">
-      <img src="kingtex_christmas_invitation.gif" alt="Kingtex Christmas Invitation" />
-      <div class="footer-text">
-        Tap the top-right ⋯ in WeChat to share this invitation with friends.
-      </div>
+    <div class="container">
+        <div class="card">
+            <div class="image-box">
+                <img src="kingtex_christmas_invitation.gif" alt="Kingtex Christmas Invitation">
+            </div>
+            <div class="footer">
+                <strong>Kingtex Christmas Invitation</strong><br>
+                Opened in your browser. In WeChat, tap the top-right “⋯” to share this page with friends.
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
